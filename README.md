@@ -12,13 +12,13 @@ There are multiple patterns with RSocket
 ##Request & Response
 rsc --request --route=request-response --data "{\"empName\":\"test\"}" --stacktrace --debug tcp://localhost:7869/request-response
 
-# Fire & Forget
+## Fire & Forget
 rsc -fnf --route fire-and-forget --debug --data="{\"empName\":\"d\"}" tcp://localhost:7869
 
-# Stream - output
+## Stream - output
 rsc --stream --debug --trace  --route request-stream -d "{\"key\":123}" tcp://localhost:7869
 
-# Stream Input & Output
+## Stream Input & Output
 rsc --debug --trace --channel --data - --route stream-stream tcp://localhost:7869
 
 
