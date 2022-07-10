@@ -9,7 +9,7 @@ There are multiple patterns with RSocket
 - Channel where a single value or multiple values will give forth to a stream response
 - Stream - where both input & output are streamed
 
-##Request & Response
+## Request & Response
 rsc --request --route=request-response --data "{\"empName\":\"test\"}" --stacktrace --debug tcp://localhost:7869/request-response
 
 ## Fire & Forget
